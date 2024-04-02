@@ -1,13 +1,25 @@
 body{
     background-color:antiquewhite;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(214, 196, 196);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
 header div{
-    text-align: left;
+    text-align: right;
+    grid-column: 3;
 }
 
 ul{  
+    margin-top: 0;
+    padding-bottom: 4px;
    list-style: none;
+   align-items: center;
+   
 }
 
 li{
