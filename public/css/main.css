@@ -203,3 +203,20 @@ body{
 .separador{
     height: 40px;
 }
+
+/*formulario y login*/
+
+#content-form{
+    margin: 10px;
+    width: auto;
+    background-color: #f8edd1;
+    display: flex;
+    flex-wrap: wrap;
+        label{
+            font-size: 18px;
+            text-align: center;
+        }
+        form{
+            width: 50%;
+        };
+}

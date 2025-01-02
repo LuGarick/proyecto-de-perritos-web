@@ -21,12 +21,14 @@ app.get('/adopcion.html', (req,res) =>{
 app.get('/sobre_nosotros.html', (req,res) =>{
     res.sendFile(path.join(__dirname,'../view/sobre_nosotros.html'));
 });
+app.get('/login.html', (req,res) =>{
+    res.sendFile(path.join(__dirname,'../view/login.html'));
+});
 
 
 app.listen(port,() => {
     console.log(`servidor ubicado en http://localhost:${port}`);
 });
-
 
 //base de datos
 const mongoose = require('./config');

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sobre nosotros</title>
+    <title>Login</title>
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
@@ -18,14 +18,27 @@
                     <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
                     <li><a href="contactanos.html">Contactanos</a></li>
                     <li><a href="adopcion.html">Adopción</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="login.html"></a></li>
                 </ul>
             </div>
         </nav>
     </header>
-        <h2>Quienes somos</h2>
-        <h2>Misión</h2>
-        <h2>Visión</h2>
+    <div class="separador"></div>
+    <form action="logeo">
+        <fieldset>
+            <legend>Inicio de sesión</legend>
+            <label for="" id="nameUser">Usuario</label>
+            <input type="text" placeholder="Ingrese su usuario..">
+            <br><br>
+            <label for="" id="emailUser">Correo</label>
+            <input type="email" placeholder="Ingrese su correo..">
+            <br><br>
+            <label for="" >Contraseña</label>
+            <input type="password" id="passwordUser" placeholder="Ingrese su contraseña..">
+            <br><br>
+        </fieldset>
+    </form>
+    <button type="submit">Registrarse</button>
 
 </body>
 </html>
