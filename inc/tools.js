@@ -27,3 +27,25 @@ app.listen(port,() => {
     console.log(`servidor ubicado en http://localhost:${port}`);
 });
 
+
+//base de datos
+const mongoose = require('./config');
+const User = require('./table1UserClass');
+
+//poder manejar archivos json
+app.use(express.json());
+
+//crear usuario
+app.post('/users', async(req,res) =>{
+    try{
+        const newUser = new User(req.body);
+        await newUser.save();
+        res.status(201).send(newUser);
+    }
+    catch(err){
+        res.status(400).send(err);
+    }
+})
+
+//eliminar usuario
+
